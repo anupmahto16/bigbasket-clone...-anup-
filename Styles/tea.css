@@ -1,0 +1,193 @@
+
+
+#body {
+    width: 1170px;
+    /* margin: auto; */
+  }
+  #Container-Vegetable{
+    margin-top: 50px;
+  }
+  
+  .Categories {
+    font-size: 14px;
+    /* display: block; */
+    font-weight: bold;
+    border-bottom: 2px solid green;
+  }
+  
+  #temp > #stick > h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #stick {
+    position: sticky;
+    top: 10px;
+  }
+  
+  #heading-filter {
+    width: 57%;
+    /* margin-left: 30%; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #heading-filter > h1 {
+    color: #58595b;
+  }
+  #Main-box {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 18%;
+  
+    /* font-size: 12px;
+    margin-left: 10%; */
+  }
+  
+  #Search-icon {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  #Search-icon:hover {
+    background-color: #58595b32;
+    cursor: pointer;
+  }
+  
+  #Search-icon > img {
+    width: 12px;
+    margin-top: 3px;
+  }
+  
+  .checkPrice {
+    font-size: 14px;
+    color: #58595b;
+  }
+  .check-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  #temp {
+    /* margin-left: 12rem; */
+    width: 50%;
+  }
+  #heading-filter > select {
+    color: #58595b;
+    border: 1px solid green;
+    width: 35%;
+    height: 25px;
+  }
+  
+  #All-Products {
+    display: flex;
+    width: 57%;
+    /* margin-left: 30%; */
+    gap: 10px;
+    padding-top: 30px;
+  }
+  
+  #All-Products > a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 2px solid green;
+  }
+  
+  #All-Products:hover > a {
+    font-weight: bold;
+  }
+  
+  #Vegitables {
+    width: 57%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    /* margin-left: 30%; */
+  }
+  
+  .vegitablesImage {
+    width: 100%;
+    height: 130px;
+  }
+  .cards {
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    /* border-right: 1px solid rgba(128, 128, 128, 0.127); */
+    border: 1px solid rgba(128, 128, 128, 0.126);
+  
+    padding: 0 10px;
+  }
+  .cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .discount {
+    text-align: end;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px 0;
+  }
+  
+  .VegiName {
+    font-weight: bold;
+    font-size: 11px;
+    margin: 10px 0;
+  }
+  
+  .prevPrice {
+    margin-left: 2px;
+    color: rgba(57, 56, 56, 0.773);
+    text-decoration: line-through;
+    margin-right: 5px;
+  }
+  
+  .selectInput {
+    /* margin-bottom: 1.5rem; */
+    width: 98%;
+  }
+  
+  .Details {
+    padding: 10px 20px;
+    background-color: #f4f3f2;
+    font-size: 12px;
+  }
+  
+  .currPrice {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .delivery {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+  }
+  .delivery > span {
+    display: flex;
+    align-items: center;
+  }
+  .delivery > img {
+    width: 20%;
+    height: 20%;
+  }
+  
+  .InputQuan {
+    width: 20%;
+    border-radius: 3px;
+    margin-left: 1px;
+    border-color: rgba(128, 128, 128, 0.31);
+  }
+  
+  button {
+    padding: 9px 10px;
+    background-color: #fee67c;
+    border-radius: 3px;
+    border-style: none;
+  }
+  

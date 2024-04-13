@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="/Styles/payment.css" />
+  <link rel="stylesheet" href="./Styles/utilities.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="position-sticky-top">
+    <div id="Payment-nav">
+      <img class="logo-img-payment" src="./Images/bb_logo.webp" alt="Big-Basket Logo" width="176px" />
+      <!-- <h3 class="tollNumber">1860 123 1000</h3> -->
+    </div>
+    <hr />
+  </nav>
+  <div id="full-form" class="color-666666">
+    <section id="payment" class="d-flex flex-column g-10">
+      <div id="delivery-address">
+        <div class="heading-payment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="location-active"
+            x="966" y="815">
+            <title>Group 6</title>
+            <path
+              d="M8.22 14.893a.316.316 0 0 1-.435-.007c-1.002-.989-5.197-5.33-5.21-8.71C2.563 3.182 5.005.754 7.998.754c2.996 0 5.376 2.428 5.426 5.424.06 3.593-4.183 7.764-5.204 8.716zm5.955-8.729a6.296 6.296 0 0 0-1.825-4.353A6.092 6.092 0 0 0 7.898.001a6.193 6.193 0 0 0-4.255 1.792 6.102 6.102 0 0 0-1.82 4.387c.007 1.76.972 3.899 2.875 6.355 1.375 1.776 2.73 3.053 2.787 3.107l.29.273c.117.11.301.114.42.007l.3-.264a25.55 25.55 0 0 0 2.831-3.023c1.923-2.42 2.88-4.598 2.85-6.471zM8.098 8.362a2.439 2.439 0 1 1 0 0zm0-5.627c-1.76 0-3.19 1.43-3.19 3.19 0 1.758 1.43 3.19 3.19 3.19s3.19-1.432 3.19-3.19c0-1.76-1.43-3.19-3.19-3.19z"
+              fill="#222" fill-rule="evenodd" />
+          </svg>
+          <h3>Delivery Address</h3>
+        </div>
+        <div>
+          <div class="form">
+            <form action="">
+              <h4 class="color-666666">Personal Details</h4>
+              <div id="name-contact">
+                <div>
+                  <div id="name">
+                    <label for="first-name"><span class="color-red">*&nbsp;</span>Enter first name</label>
+                    <input type="text" id="first-name" required />
+                  </div>
+                </div>
+
+                <div>
+                  <div id="last-name">
+                    <label for="lastname"><span class="color-red">*&nbsp;</span>Enter last name</label>
+                    <input type="text" id="lastname" required />
+                  </div>
+                </div>
+
+                <div>
+                  <div id="phone">
+                    <label for="contact"><span class="color-red">*&nbsp;</span>Enter contact number</label>
+                    <input type="number" id="contact" required />
+                  </div>
+                </div>
+              </div>
+
+              <h4>Address Details</h4>
+              <div id="Address-details">
+                <div id="Address">
+                  <label for="houseNumber"><span class="color-red">*&nbsp;</span>House No</label>
+                  <input type="number" id="houseNumber" required />
+                </div>
+                <div>
+                  <label for="apartment">Enter apartment name</label>
+                  <input type="text" id="apartment" required />
+                </div>
+              </div>
+
+              <div id="Street-details">
+                <div id="street-det">
+                  <label for="street">Enter street details</label>
+                  <input type="text" id="street" required />
+                </div>
+                <div>
+                  <label for="landmark">Enter landmark for easy reach out</label>
+                  <input type="text" id="landmark" required />
+                </div>
+              </div>
+
+              <div id="city-details">
+                <div id="city-name">
+                  <label for="city">Enter city name</label>
+                  <select type="text" id="city">
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="mumbai">Bangalore</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="area-det"><span class="color-red">*&nbsp;</span>Area details</label>
+                  <select type="text" id="area-det">
+                    <option value="">Sarojni</option>
+                    <option value="">Anand Vihar</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="pincode"><span class="color-red">*&nbsp;</span>Pincode</label>
+                  <select type="text" id="pincode">
+                    <option value="">21345</option>
+                    <option value="248145">248145</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn-dark-bg" type="submit">Add Address</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="gift-message">
+        <div class="heading-payment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="gift-active" x="832"
+            y="707">
+            <path fill="#222" fill-rule="evenodd"
+              d="M15.293 6.843a.154.154 0 0 1-.154.154H9.846a.154.154 0 0 1-.154-.154V3.676c0-.085.07-.154.154-.154h5.293c.085 0 .154.07.154.154v3.167zm-.724 8.172a.154.154 0 0 1-.154.154H9.846a.154.154 0 0 1-.154-.154V7.858c0-.085.07-.154.154-.154h4.57c.084 0 .153.069.153.154v7.157zm-5.615 0a.154.154 0 0 1-.154.154H7.2a.154.154 0 0 1-.154-.154V3.676c0-.085.069-.154.154-.154h1.6c.085 0 .154.07.154.154v11.34zM6.308 6.843a.154.154 0 0 1-.154.154H.86a.154.154 0 0 1-.154-.154V3.676c0-.085.069-.154.154-.154h5.293c.085 0 .154.07.154.154v3.167zm0 8.172a.154.154 0 0 1-.154.154h-4.59a.154.154 0 0 1-.154-.154V7.858c0-.085.069-.154.154-.154h4.59c.085 0 .154.069.154.154v7.157zM4.457 1.692c0-.594.406-1.015 1.4-1.015 1.5 0 1.768.843 1.804 1.523a5.717 5.717 0 0 0 0 .44v.003a.194.194 0 0 1-.118.172H5.587c-.78-.091-1.13-.586-1.13-1.123zm3.882.508c.036-.68.304-1.523 1.804-1.523.994 0 1.4.42 1.4 1.015 0 .537-.35 1.032-1.13 1.123H8.457a.194.194 0 0 1-.118-.172v-.002a5.701 5.701 0 0 0 0-.44zm7.353.615h-3.869c.257-.309.397-.7.397-1.123 0-.514-.207-.961-.583-1.26C11.277.145 10.774 0 10.143 0c-.829 0-1.467.225-1.897.668a2.333 2.333 0 0 0-.022.024.306.306 0 0 1-.448 0 2.703 2.703 0 0 0-.023-.024C7.323.225 6.686 0 5.857 0c-.631 0-1.134.145-1.494.432-.376.299-.583.746-.583 1.26 0 .423.14.814.397 1.123H.307A.308.308 0 0 0 0 3.123v4.273c0 .17.138.308.308.308h.246c.085 0 .154.068.154.153v7.79c0 .17.137.307.307.307h13.97c.17 0 .307-.138.307-.308V7.857c0-.085.07-.153.154-.153h.246c.17 0 .308-.138.308-.308V3.123a.308.308 0 0 0-.308-.308z" />
+          </svg>
+          <h3>is this a gift order?</h3>
+        </div>
+        <div class="form">
+          <div class="d-flex flex-column g-10" style="max-width: 450px;">
+            <div class="d-flex g-10">
+              <div class="flex-1">
+                <div class="d-flex flex-column">
+                  <label>Enter recipient's name</label>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="d-flex flex-column">
+                  <label>Enter your name</label>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="d-flex flex-column">
+                <label>Enter message</label>
+                <textarea rows="3" cols="50"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn-dark-bg">Save and Continue</button>
+          <button class="btn-light-bg">Cancel</button>
+        </div>
+      </div>
+
+      <div id="delivery-options">
+        <div class="heading-payment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="calender-active"
+            x="538" y="457">
+            <path fill="#222" fill-rule="evenodd"
+              d="M15.137 3.83H.847a.155.155 0 0 1-.155-.156v-.947c0-.086.07-.155.156-.155h14.289c.086 0 .155.07.155.155v.947c0 .086-.07.155-.155.155m0 11.479H.847a.155.155 0 0 1-.155-.156V4.66c0-.086.07-.155.156-.155h14.289c.086 0 .155.07.155.155v10.492c0 .086-.07.156-.155.156M12.55 1.724V.311A.31.31 0 0 0 12.24 0h-.124a.31.31 0 0 0-.311.31v1.414c0 .086-.07.156-.156.156H8.575a.155.155 0 0 1-.156-.156V.311A.31.31 0 0 0 8.11 0h-.125a.31.31 0 0 0-.31.31v1.414c0 .086-.07.156-.156.156H4.412a.155.155 0 0 1-.156-.156V.311A.31.31 0 0 0 3.946 0H3.82a.31.31 0 0 0-.31.31v1.414c0 .086-.07.156-.156.156H.311A.31.31 0 0 0 0 2.19v13.5c0 .17.14.31.31.31h15.364a.31.31 0 0 0 .31-.31V2.19a.31.31 0 0 0-.31-.31h-2.967a.155.155 0 0 1-.156-.156M8.94 13.235H6.92a.155.155 0 0 1-.155-.155v-2.02c0-.086.07-.155.155-.155h2.02c.086 0 .155.07.155.155v2.02c0 .085-.07.155-.155.155m-2.858-2.703v3.076c0 .171.139.31.31.31h3.076a.31.31 0 0 0 .31-.31v-3.076a.31.31 0 0 0-.31-.31H6.392a.31.31 0 0 0-.31.31m-1.593 2.687H2.47a.155.155 0 0 1-.154-.155v-2.02c0-.085.07-.155.155-.155h2.02c.085 0 .155.07.155.156v2.02c0 .085-.07.154-.156.154m-2.858-2.702v3.075c0 .172.14.31.31.31h3.076a.31.31 0 0 0 .311-.31v-3.075a.31.31 0 0 0-.31-.311H1.941a.31.31 0 0 0-.31.31M13.39 8.793h-2.02a.155.155 0 0 1-.154-.155v-2.02c0-.085.07-.155.155-.155h2.02c.085 0 .155.07.155.155v2.02c0 .086-.07.155-.156.155M10.532 6.09v3.076c0 .172.14.31.31.31h3.076a.31.31 0 0 0 .311-.31V6.089a.31.31 0 0 0-.31-.31h-3.076a.31.31 0 0 0-.311.31M8.94 8.792H6.92a.155.155 0 0 1-.155-.155v-2.02c0-.085.07-.155.155-.155h2.02c.086 0 .155.07.155.155v2.02c0 .086-.07.155-.155.155M6.082 6.09v3.076c0 .172.139.31.31.31h3.076a.31.31 0 0 0 .31-.31V6.089a.31.31 0 0 0-.31-.31H6.392a.31.31 0 0 0-.31.31M4.489 8.777H2.47a.155.155 0 0 1-.154-.156v-2.02c0-.085.07-.154.155-.154h2.02c.085 0 .155.07.155.155v2.02c0 .085-.07.155-.156.155M1.631 6.074V9.15c0 .171.14.31.31.31h3.076a.31.31 0 0 0 .311-.31V6.074a.31.31 0 0 0-.31-.31H1.941a.31.31 0 0 0-.31.31" />
+          </svg>
+          <h3>Delivery Options</h3>
+        </div>
+        <div>
+          <div class="form-delivery-options ml-25">
+            <div class="d-flex justify-content-start align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="radio-active"
+                x="1118" y="948">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="8" cy="8" r="7.25" stroke="#84C225" stroke-width="1.5" />
+                  <circle cx="8" cy="8" r="3" fill="#222" />
+                </g>
+              </svg>
+              <span class="font-bold ml-5">Default delivery-options</span>
+              <span class="fs-13">1 Shipment, Delivery charge: </span>
+              <span class="color-green fs-14 font-bold">FREE</span>
+            </div>
+            <div class="form ml-10 mt-10 p-10">
+              <div class="d-flex justify-content-between">
+                <div class="fully-centered">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    id="standard-delivery" x="1403" y="1255">
+                    <g fill="#666">
+                      <path
+                        d="M23.94 12.288l-2.878-5.02a.466.466 0 0 0-.404-.232h-5.292a.23.23 0 0 1-.233-.228V4.455A.46.46 0 0 0 14.67 4H.464A.46.46 0 0 0 0 4.455v12.243a.46.46 0 0 0 .464.455h.848a.23.23 0 0 1 .226.177c.287 1.138 1.328 1.937 2.524 1.937 1.195 0 2.237-.8 2.523-1.937a.231.231 0 0 1 .226-.177h9.692c.107 0 .2.072.226.173.301 1.118 1.333 1.897 2.513 1.897 1.179 0 2.21-.779 2.513-1.897a.231.231 0 0 1 .225-.173h1.556a.46.46 0 0 0 .464-.455V12.51a.448.448 0 0 0-.06-.223zm-19.878 6.07c-.923 0-1.671-.733-1.671-1.638 0-.904.748-1.638 1.67-1.638.924 0 1.672.734 1.672 1.638 0 .435-.176.852-.49 1.159-.313.307-.738.48-1.181.48zm10.05-2.434a.23.23 0 0 1-.232.228H6.774a.231.231 0 0 1-.223-.166 2.595 2.595 0 0 0-2.49-1.812c-1.146 0-2.157.736-2.488 1.812a.231.231 0 0 1-.223.166h-.097a.23.23 0 0 1-.232-.228V5.229A.23.23 0 0 1 1.253 5H13.88a.23.23 0 0 1 .232.228v10.695zm5.13 2.39c-.923 0-1.671-.734-1.671-1.64 0-.904.748-1.637 1.67-1.637.924 0 1.672.733 1.672 1.638 0 .905-.748 1.638-1.671 1.638zm3.83-2.39a.23.23 0 0 1-.233.228h-.87a.231.231 0 0 1-.225-.17c-.316-1.098-1.338-1.856-2.502-1.856-1.164 0-2.186.758-2.502 1.856a.231.231 0 0 1-.224.17h-1.15a.23.23 0 0 1-.233-.228v-7.75a.23.23 0 0 1 .233-.228h4.884c.084 0 .161.044.202.116l2.59 4.516c.02.034.03.072.03.111v3.235z" />
+                      <path
+                        d="M21.295 11.919l-1.489-2.628a.466.466 0 0 0-.405-.234h-2.782a.46.46 0 0 0-.464.455v2.628a.46.46 0 0 0 .464.455h4.27a.466.466 0 0 0 .4-.224.447.447 0 0 0 .006-.452zm-1.589-.234h-2.39a.23.23 0 0 1-.233-.227v-1.263a.23.23 0 0 1 .232-.227h1.676c.084 0 .162.045.203.117l.715 1.262c.04.07.039.157-.003.226a.233.233 0 0 1-.2.113z" />
+                    </g>
+                  </svg>
+                  <span class="fs-13">Shipment 1: Standard Delivery</span>
+                </div>
+                <div class="fully-centered flex-column">
+                  <span class="fs-13"> <span class="cart-items text-underline">2 items</span> @ Rs. <span
+                      class="cart-value">103.54</span> </span>
+                  <span class="fs-13">Delivery charge: <span class="color-green fs-14 font-bold">FREE</span></span>
+                </div>
+                <div class="fully-centered fs-13 px-8 bg-white font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="clock" x="626"
+                    y="538">
+                    <path fill="#666" fill-rule="evenodd"
+                      d="M11.114 11.062L8.196 8.143a.153.153 0 0 1-.045-.108V3.9a.305.305 0 0 0-.305-.305h-.122a.305.305 0 0 0-.306.305s0 4.389.002 4.4c.005.07.035.14.088.193l3.088 3.088c.12.12.313.12.432 0l.086-.087a.305.305 0 0 0 0-.431M7.998 15.19a7.192 7.192 0 1 1 0-14.384 7.192 7.192 0 0 1 0 14.384m5.655-12.847A7.946 7.946 0 0 0 7.998 0a7.945 7.945 0 0 0-5.655 2.343A7.946 7.946 0 0 0 0 7.998c0 2.136.832 4.145 2.343 5.655a7.946 7.946 0 0 0 5.655 2.343 7.946 7.946 0 0 0 5.655-2.343 7.946 7.946 0 0 0 2.343-5.655 7.946 7.946 0 0 0-2.343-5.655" />
+                  </svg>
+                  <span>TOMORROW 10:00 AM - 1:00 PM</span>
+                  <img width="10px" src="./Images/Navbar/Desktop/caret.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end align-items-center">
+          <button class="btn-dark-bg payment-button">Proceed to Payment</button>
+        </div>
+      </div>
+
+      <div id="payment-options-acc">
+        <div class="border-bottom-solid d-flex justify-content-start align-items-center heading-payment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18" id="credit-card" x="679"
+            y="591">
+            <defs>
+              <path id="a" d="M0 18.196h25V1.036H0z" />
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0 -.988)">
+                <mask id="b" fill="#fff">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a" />
+                </mask>
+                <path fill="#444"
+                  d="M23.8 3.896H1.153V2.394a.24.24 0 0 1 .24-.24H23.56a.24.24 0 0 1 .24.24v1.502zM1.153 6.204h22.645V5.05H1.154v1.154zm22.645 10.53a.24.24 0 0 1-.24.24H1.394a.24.24 0 0 1-.24-.24V7.357h22.645v9.375zM24.472 1H.481A.48.48 0 0 0 0 1.48v16.167c0 .265.215.48.48.48h23.992a.48.48 0 0 0 .48-.48V1.48a.48.48 0 0 0-.48-.481z"
+                  mask="url(#b)" />
+              </g>
+              <path
+                d="M16.987 11.675a.24.24 0 0 1 .24-.24h3.736a.24.24 0 0 1 .24.24v1.516a.24.24 0 0 1-.24.24h-3.736a.24.24 0 0 1-.24-.24v-1.516zm-.673 2.91h5.562a.48.48 0 0 0 .481-.48V10.76a.48.48 0 0 0-.48-.48h-5.563a.48.48 0 0 0-.481.48v3.344c0 .265.215.48.48.48zm-13.23-2.067h5.863a.65.65 0 0 0 0-1.3H3.084a.65.65 0 0 0 0 1.3m0 2.068h5.863a.65.65 0 0 0 0-1.301H3.084a.65.65 0 0 0 0 1.3"
+                fill="#444" />
+            </g>
+          </svg>
+          <h3>Payment Options</h3>
+        </div>
+        <button id="Payment">Payment</button>
+      </div>
+    </section>
+
+    <section id="total-payment">
+      <h4 class="fs-16 mb-0">Apply Voucher</h4>
+      <div class="voucher">
+        <div id="coupon-voucher">
+          <input type="text" placeholder="Enter Voucher Code" id="coupon" />
+          <button id="submit-coupon" class="submit">Apply</button>
+        </div>
+      </div>
+
+      <h5 class="fs-16 mb-0">Order Summary</h5>
+      <div class="voucher">
+        <div class="p-15 bg-white border-solid color-4A4A4A">
+          <p class="m-0 mt-5 fs-13 d-flex justify-content-between"><span>TotalAmount :</span><span class="amount" id="Amount"></span> </p>
+          <p class="m-0 mt-5 fs-13 d-flex justify-content-between"><span>Total Items :</span> <span id="Quantity"></span></p>
+          <p class="m-0 mt-5 fs-13 d-flex justify-content-between"><span>Delivery Charge :</span> <span class="color-green font-bold">FREE</span></p>
+          <hr/>
+          <h4 class="fs-13 d-flex justify-content-between"><span>Total Amount Payable</span> <span class="amount">103.54</span></h4>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- <h1 class="Payment-heading">Payment</h1> -->
+  <script src="/JavaScript/payment.js"></script>
+</body>
+
+</html>

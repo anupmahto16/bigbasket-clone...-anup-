@@ -1,0 +1,578 @@
+:root {
+  --navbar-green: #84c225;
+  --navbar-mobile-top-height: 40px;
+  --signup-login-modal-input-height: 510px;
+  --signup-login-modal-input-width: 355px;
+  --sign-up-login-modal-top: 113px;
+}
+
+:disabled {
+  opacity: 0.5;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+/* ****** MOBILE NAV: START ************ */
+
+#mobile-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navbar-green);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#mobile-nav > div:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 6px;
+  margin-top: 10px; */
+  height: var(--navbar-mobile-top-height);
+}
+
+#mobile-nav > div:first-child > a {
+  text-decoration: none;
+}
+
+#mobile-nav > div:first-child > a:last-child {
+  position: relative;
+}
+
+#mobile-nav > div:first-child > a:last-child > span {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  font-size: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#mobile-nav > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mobile-nav div > input {
+  border: none;
+  padding: 5px;
+}
+
+#mobile-nav div > input:focus-visible {
+  border: none;
+  outline: 0px;
+}
+
+.search-bar-mobile {
+  background-color: #f2f8f8;
+  margin: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar-mobile > svg {
+  padding: 6px 12px;
+}
+
+#mobile-nav .search-bar-mobile > input {
+  width: 100%;
+  padding-left: 12px;
+}
+
+/* ****** MOBILE NAV: END ************ */
+
+/* ****** SIDEBAR MOBILE: START ************ */
+
+.plus_icon,
+.minus_icon {
+  cursor: pointer;
+  width: 12px;
+  height: 15px;
+}
+
+#sidebar-mobile {
+  left: -300px;
+  height: 100%;
+  border-right: 1px solid black;
+  z-index: 99999;
+}
+
+#cover-section {
+  position: absolute;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  z-index: 999;
+}
+
+#sidebar-mobile {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar-mobile > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-green);
+  height: var(--navbar-mobile-top-height);
+  padding: 2px 10px;
+}
+
+#sidebar-mobile > div:first-child > button {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar-mobile > div:first-child > h2 {
+  margin: 0px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#sidebar-mobile > div:last-child {
+  background-color: #fff;
+  flex: 1;
+}
+
+#sidebar-mobile > div:last-child > h3 {
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px;
+  color: #333333;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+#sidebar-menu > div {
+  border-bottom: 1px solid #b6b6b6;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#sidebar-menu > div > img {
+  width: 12px;
+  height: 15px;
+  cursor: pointer;
+}
+
+@keyframes slidein {
+  from {
+    left: -300px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+
+@keyframes slidedown {
+  from {
+    top: -1000px;
+  }
+
+  to {
+    top: var(--sign-up-login-modal-top);
+  }
+}
+
+@keyframes slideup {
+  from {
+    top: var(--sign-up-login-modal-top);
+  }
+
+  to {
+    top: -1000px;
+  }
+}
+
+@keyframes slideout {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: -300px;
+  }
+}
+
+/* ****** SIDEBAR MOBILE: END ************ */
+
+/* ****** LOGIN SIGN-UP MODAL MOBILE: START ************ */
+
+#sign-up-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 999999;
+  top: var(--sign-up-login-modal-top);
+}
+
+#sign-up-login > div:first-child {
+  width: var(--signup-login-modal-input-width);
+  min-height: var(--signup-login-modal-input-height);
+  height: auto;
+  background-color: #fff;
+  position: relative;
+  z-index: 4;
+}
+
+#sign-up-login > div {
+  box-shadow: 0 0 36px 0 rgba(141, 135, 135, 0.58);
+}
+
+#sign-up-login > div:nth-child(2) {
+  width: 280px;
+  height: 440px;
+  background-color:black;
+  position: relative;
+  z-index: 3;
+}
+
+#sign-up-login > div > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: #696969;
+  border-radius: 50%;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#sign-up-login
+  > div:first-child
+  > #login-signup-view-container
+  > #login-signup {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  min-height: var(--signup-login-modal-input-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login-signup > h3,
+#otp > div h3 {
+  color: rgb(132, 194, 37);
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+#otp > div > div:first-child {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#otp-input {
+  display: block;
+  color: #444;
+  line-height: 1.4;
+  font: 18px droid sans mono, consolas, monospace;
+  /* margin: auto auto 4px; */
+  width: 250px;
+  border: 0 !important;
+  background: repeating-linear-gradient(
+      90deg,
+      #979797 0px,
+      #979797 25px,
+      transparent 0px,
+      transparent 41px
+    )
+    0px 100%/ 245px 1px no-repeat;
+  font: 18px droid sans mono, consolas, monospace;
+  letter-spacing: 30.4px;
+}
+
+#otp-input:focus {
+  outline: 0;
+}
+
+.btn-outline-small {
+  padding: 4px 10px;
+  background-color: white;
+  color: #4a4a4a;
+  border: 1px solid #8f8f8f;
+  border-radius: 3px;
+}
+
+#current-user-number {
+  margin: 0px;
+}
+
+#login-signup-view-container {
+  display: block;
+}
+
+#current-user-number {
+  font-size: 18px;
+}
+
+#otp-view-container {
+  display: none;
+  height: 495px;
+}
+
+#otp {
+  height: 96%;
+}
+
+#otp > div h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  flex: 1;
+}
+
+#login-signup > div {
+  width: 295px;
+}
+
+#login-signup > div > input {
+  width: 100%;
+  border: none;
+  color: #444;
+  border-bottom: 1px solid #dedede;
+  padding: 5px 5px;
+}
+
+#login-signup > div > input:focus {
+  outline: 0;
+  border-bottom: 2px solid #84c225;
+}
+
+#login-signup > div:last-child > p {
+  color: #979797;
+  font-size: 10px;
+  text-align: center;
+}
+
+#login-signup > div:last-child > p > a {
+  color: #518ef8;
+  text-decoration: none;
+}
+
+#switch-login-method-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #666666;
+  color: #333;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+#continue-button {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  font-weight: bold;
+  /* margin-top: 20px; */
+  background-color: #84c225;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+}
+
+#verify-continue-button {
+  width: 90%;
+  height: 48px;
+  border-radius: 4px;
+  font-weight: bold;
+  /* margin-top: 20px; */
+  background-color: #84c225;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+#login-signup-side {
+  padding: 15px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#login-signup-side > div > div:first-child {
+  padding: 20px 41px;
+  gap: 10px;
+}
+
+#login-signup-side .download-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h3.signup-modal-side-text {
+  font-size: 14px;
+  color: #979797;
+  margin: 0px;
+}
+p.signup-modal-side-text {
+  font-size: 12px;
+  color: #979797;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+#otp {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ****** LOGIN SIGN-UP MODAL MOBILE: END ************ */
+
+.delivery-button {
+  color: rgba(96, 96, 96, 1);
+  background-color: rgba(238, 238, 238, 1);
+  border-radius: 4px;
+  border: 0px;
+}
+
+.navbar-search {
+  border: 1px solid rgba(213, 213, 213, 0.5);
+  border-radius: 4px;
+  padding: 10px 10px 10px 20px;
+}
+
+.navbar-dropdowns {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#sign-up-login.index-page{
+  top: -1000px;
+}
+
+#desktop-nav {
+  display: none;
+}
+#desktop-nav-not-logged-in {
+  display: none;
+}
+#desktop-nav-logged-in{
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.1);
+    min-width: 100vw;
+  }
+  #desktop-nav-logged-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #desktop-nav-not-logged-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #desktop-nav-not-logged-in .container{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+
+  }
+  #sidebar-mobile {
+    display: none;
+  }
+  .only-mobile {
+    display: none;
+  }
+  .container {
+    width: 768px;
+    /* padding-right: 2.75rem; */
+    /* padding-left: 2.75rem; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+#logout_svg:hover{
+  fill: #84c225;
+}
+
+#logout_svg:hover path{
+  stroke: #84c225;
+}

@@ -1,0 +1,345 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#body {
+  width: 1170px;
+  margin: auto;
+}
+#navv{
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+ /* margin: 50px; */
+ border-radius: 100%;
+ /* border: 1px solid red; */
+}
+#navv:hover{
+  /* border: 1px solid green; */
+  background-color: #5E9400;
+  color: whitesmoke;
+  
+}
+/* #select{
+  border: none;
+  color: white;
+  background-color: #5E9400;
+  border-color: #5E9400;
+  width:100px;-webkit-appearance: none;
+} */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* //Main first Image */
+
+#Main-img {
+  margin-bottom: 50px;
+}
+#Main-img img {
+  width: 100%;
+}
+
+/* Sales Image */
+#sale-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#sale-img img {
+  width: 90%;
+}
+
+/* Category of Egg , Meat , And Fish  */
+
+#category {
+  display: flex;
+  justify-content: center;
+}
+
+#category > div {
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#category > div img {
+  width: 180px;
+}
+
+/* // Silde Show */
+#slide-show {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+#slide-show > div {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slide-show > div img {
+  width: 25%;
+  float: left;
+}
+#About , #collaspe {
+  background-color: black;
+  color: whitesmoke;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  75% {
+    left: -200%;
+  }
+  80% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+/* About Section */
+
+#About {
+  padding-left: 3%;
+  padding-right: 2%;
+  margin-top: 3%;
+  border: 1px solid rgba(128, 128, 128, 0.26);
+  padding-bottom: 2%;
+}
+
+#About > h2 {
+  padding-top: 2%;
+}
+
+#About > p,
+#About > ul,
+#About > div > p {
+  padding-top: 5px;
+  font-size: 13px;
+  word-spacing: 2px;
+  line-height: 20px;
+}
+
+#About > p > a {
+  color: rgb(39, 197, 39);
+  text-decoration: none;
+  font-weight: bold;
+}
+#About > ul,
+#About > div > p,
+#About > div > h2 {
+  padding-left: 5%;
+}
+
+#About > button {
+  padding: 3px 8px;
+  margin-left: 5%;
+}
+
+#About > button:hover {
+  cursor: pointer;
+}
+
+/* Common css*/
+
+/* Bank Offers , Top Offers , Fruits And Vegetables*/
+
+#Bank_Offer > h2,
+#Top_Offer > h2,
+#Fruits_Vegitables > h2,
+#Snacks_Store > h2,
+#Cleaning_Household > h2,
+#Daily_Staples > h2,
+#Beverages > h2,
+#Beauty_Hygiene > h2,
+#Home_Kitchen > h2,
+#Brand_Store > h2 {
+  font: 24px;
+  text-align: center;
+  color: rgba(94, 93, 93, 0.97);
+  margin: 1%;
+  margin-top: 4%;
+  margin-bottom: 1%;
+}
+
+.cards-box {
+  display: flex;
+  gap: 20px;
+  margin-top: 2%;
+  width: 93.5%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.cards-box a img {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.304);
+}
+
+.cards-box a img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* @mediaQuery */
+
+/* min=>750px  max=>970 */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #body {
+    width: 970px;
+  }
+
+  #category > div img {
+    width: 145px;
+  }
+
+  #Daily_Staples > .cards-box > a:nth-last-child(1),
+  #Daily_Staples > .cards-box > a:nth-last-child(2),
+  #Beauty_Hygiene > .cards-box > a:nth-last-child(1),
+  #Beauty_Hygiene > .cards-box > a:nth-last-child(2),
+  #Home_Kitchen > .cards-box > a:nth-last-child(1),
+  #Home_Kitchen > .cards-box > a:nth-last-child(2),
+  #Beverages > .cards-box > a:nth-last-child(1),
+  #Beverages > .cards-box > a:nth-last-child(2) {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 50px;
+  }
+}
+
+/* //media Query min-width:768 and max-width:992  */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #body {
+    width: 750px;
+  }
+
+  #category > div > :nth-last-child(1),
+  #category > div > :nth-last-child(2) {
+    display: none;
+  }
+
+  #category > div img {
+    width: 160px;
+  }
+
+  #Daily_Staples > .cards-box a:nth-last-child(-n + 3),
+  #Beauty_Hygiene > .cards-box a:nth-last-child(-n + 3),
+  #Home_Kitchen > .cards-box a:nth-last-child(-n + 3),
+  #Beverages > .cards-box a:nth-last-child(-n + 3),
+  #Brand_Store > .cards-box a:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    width: 94%;
+  }
+}
+
+/* media query 572px - 778px */
+
+@media screen and (min-width: 572px) and (max-width: 768px) {
+  #body {
+    width: 540px;
+  }
+
+  #category > div a:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  #Daily_Staples > .cards-box a:nth-last-child(-n + 3),
+  #Beauty_Hygiene > .cards-box a:nth-last-child(-n + 3),
+  #Home_Kitchen > .cards-box a:nth-last-child(-n + 3),
+  #Beverages > .cards-box a:nth-last-child(-n + 3),
+  #Brand_Store > .cards-box a:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    width: 94%;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 572px) {
+  #body {
+    /* width: 52rem; */
+    width: 100%;
+    margin: auto;
+  }
+
+  #category > div a:nth-last-child(-n + 4) {
+    display: none;
+  }
+
+  /* #category{
+    display: none;
+  } */
+
+  #Bank_Offer > h2,
+  #Top_Offer > h2,
+  #Fruits_Vegitables > h2,
+  #Snacks_Store > h2,
+  #Cleaning_Household > h2,
+  #Daily_Staples > h2,
+  #Beverages > h2,
+  #Beauty_Hygiene > h2,
+  #Home_Kitchen > h2,
+  #Brand_Store > h2 {
+    font: 230px;
+    text-align: center;
+    color: rgba(94, 93, 93, 0.97);
+    margin: 1%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+  }
+
+  #Daily_Staples > .cards-box a:nth-last-child(-n + 3),
+  #Beauty_Hygiene > .cards-box a:nth-last-child(-n + 3),
+  #Home_Kitchen > .cards-box a:nth-last-child(-n + 3),
+  #Beverages > .cards-box a:nth-last-child(-n + 3),
+  #Brand_Store > .cards-box a:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    width: 94%;
+  }
+}
