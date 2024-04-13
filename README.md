@@ -46,6 +46,7 @@ BigBusket is a basic e-commerce website designed to showcase various fruits and 
   ![ScreenShot currently unavailable](https://i.postimg.cc/0Nz0rgxm/checkout.png)
   <hr>
   <h4>Payment and Checkout</h4>
+  
  ![ScreenShot currently unavailable](https://i.postimg.cc/g0Qfrx2d/payment.png)
  ![ScreenShot currently unavailable](https://i.postimg.cc/1zVyWhgm/payment-2.png)
  <hr>
